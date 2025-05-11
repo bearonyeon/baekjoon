@@ -1,0 +1,30 @@
+import java.util.Scanner;
+import java.lang.StringBuffer;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		String n1 = sc.next();
+		String n2 = sc.next();
+		
+		StringBuffer sb = new StringBuffer(n1);
+		String strReverseN1 = sb.reverse().toString();
+		int reverseN1 = Integer.parseInt(strReverseN1);
+		
+		sb = new StringBuffer(n2);
+		String strReverseN2 = sb.reverse().toString();
+		int reverseN2 = Integer.parseInt(strReverseN2);
+		
+		if (reverseN1 > reverseN2) {
+			System.out.println(reverseN1);
+		}
+		else {
+			System.out.println(reverseN2);
+		}
+		
+		sc.close();
+	}
+
+}
